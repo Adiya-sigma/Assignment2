@@ -12,7 +12,7 @@ public class LibraryManager {
         this.libraryRepositoryImpl = libraryRepositoryImpl;
     }
     public void showAllBooks() {
-        System.out.println("Все книги в библиотеке:");
+        System.out.println("List of Books in Library Manager: ");
 
         LibraryRepositoryImpl libraryRepository;
         for (Book book : libraryRepositoryImpl.getAllBooks()) {

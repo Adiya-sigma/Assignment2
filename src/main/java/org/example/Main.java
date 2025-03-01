@@ -12,16 +12,12 @@ public class Main {
         LibraryRepository libraryRepository = context.getBean(LibraryRepository.class);
 
         Book book = new Book();
-        book.setTitle("The Best Book");
-        book.setAuthor("Adiya");
+        book.setTitle("Java");
+        book.setAuthor("Eldar");
         book.setId(1);
-        Book book2 = new Book();
-        book2.setTitle("The not Best Book");
-        book2.setAuthor("Nurzhan");
-        book2.setId(2);
+
 
         libraryRepository.addBook(book);
-        libraryRepository.addBook(book2);
 
         libraryManager.showAllBooks();
 
