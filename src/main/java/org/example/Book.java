@@ -1,9 +1,10 @@
 package org.example;
 
 public class Book {
+    private int Id;
     private String title;
     private String author;
-    private int Id;
+
 
     public String getTitle() {
         return title;
@@ -26,6 +27,11 @@ public class Book {
     }
 
     public void setId(int id) {
-        Id = id;
+        this.Id = id;
     }
+    @Override
+    public String toString() {
+        return "Book{id=" + Id + ", title='" + title + "', author='" + author + "'}";
+    }
+
 }
